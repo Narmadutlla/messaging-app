@@ -34,7 +34,7 @@ export function ChatProfile() {
         )}
         <Stack spacing={4}>
           <Text variant="gradient" size="lg" weight={"bold"}>
-            {user?.name || channel?.name}
+            {user?.name ?? channel?.name}
           </Text>
           <Text color={"dimmed"} size="xs">
             {chatType === "dm"
